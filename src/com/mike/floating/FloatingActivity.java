@@ -15,7 +15,6 @@ public class FloatingActivity extends Activity {
 //
 	private FloatingView mFloatingView = null;
 //	private boolean mIsFloatingViewRemoved = false;
-	private FloatingManager mFloatingManager;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -31,8 +30,7 @@ public class FloatingActivity extends Activity {
 		});
 //		createView();
 		mFloatingView = new FloatingView(getApplicationContext());
-		mFloatingManager = new FloatingManager(this, mFloatingView);
-		mFloatingManager.show();
+		mFloatingView.show();
 
 	}
 
@@ -75,8 +73,8 @@ public class FloatingActivity extends Activity {
 	@Override
 	protected void onStop() {
 		super.onStop();
-		if (null != mFloatingManager) {
-			mFloatingManager.dismiss();
+		if (null != mFloatingView) {
+			mFloatingView.dismiss();
 		}
 //		mWindowManager.removeView(mFloatingView);
 //		mIsFloatingViewRemoved = true;
@@ -86,8 +84,8 @@ public class FloatingActivity extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		if (null != mFloatingManager) {
-			mFloatingManager.show();
+		if (null != mFloatingView) {
+			mFloatingView.show();
 		}
 //		if (null != mWindowManager && null != mFloatingView
 //				&& mIsFloatingViewRemoved) {
