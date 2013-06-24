@@ -5,9 +5,9 @@ import android.view.WindowManager;
 
 public class FloatingApplication extends Application {
 
-	private WindowManager.LayoutParams windowManagerLayoutParams = new WindowManager.LayoutParams();
+	private WindowManager.LayoutParams mWindowManagerLayoutParams = new WindowManager.LayoutParams();
 
-	public WindowManager.LayoutParams getMywmParams() {
-		return windowManagerLayoutParams;
+	public WindowManager.LayoutParams getWindowManagerLayoutParams() {
+		return mWindowManagerLayoutParams;
 	}
 }
