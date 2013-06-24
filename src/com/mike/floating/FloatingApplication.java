@@ -3,7 +3,7 @@ package com.mike.floating;
 import android.app.Application;
 import android.view.WindowManager;
 
-public class MyApplication extends Application {
+public class FloatingApplication extends Application {
 	
 	/**
 	 * ����ȫ�ֱ���
