@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#77ff0000"
+    android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/test"
+    <Button
+        android:id="@+id/btn_fullscreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="10sp"
+        android:text="To Fullscreen" />
+ 
+
+    <Button
+        android:id="@+id/btn_stardard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:textSize="10sp"
+        android:text="To Stardard" />
+
+    <Button
+        android:id="@+id/btn_mini"
+          android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Mini" />
 
 </LinearLayout>
